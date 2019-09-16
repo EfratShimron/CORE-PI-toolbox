@@ -1,8 +1,7 @@
 clear all;
 close all;
 
-% This Matlab code is an implementation of the CORE-PI method that was
-% published in:
+% This Matlab code is an implementation of the CORE-PI method published in:
 % Shimron, Efrat, Andrew G. Webb, and Haim Azhari. "CORE?PI: Non?iterative 
 % convolution?based reconstruction for parallel MRI in the wavelet domain." 
 % Medical physics 46.1 (2019): 199-214.?
