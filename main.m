@@ -6,8 +6,8 @@ close all;
 % convolution?based reconstruction for parallel MRI in the wavelet domain." 
 % Medical physics 46.1 (2019): 199-214.?
 
-% Also, this toolbox contains data that was produced using the Realistic
-% Analytical Brain Phantom, which was published in:
+% Also, this toolbox contains data that was reproduced from the toolbox of the 
+% Realistic Analytical Brain Phantom, which was published in:
 % Guerquin-Kern, Matthieu, et al. "Realistic analytical phantoms for parallel 
 % magnetic resonance imaging." IEEE Transactions on Medical Imaging 31.3 (2011): 626-636.?
 
