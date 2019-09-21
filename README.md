@@ -18,9 +18,17 @@ Thus, users do not need to calibrate any params!
 CORE-PI enables flexible undersampling of a 2D Cartesian k-space with 1D undersampling 
 schemes.
 
-The code package contains exmaples with two datasets: 
-(1) In-vivo 7t brain imaging data.
-(2) Data of a Realistic Analytical Brain Phantom, reproduced with
+Exmaples include: 
+(1) Recosntructions of a realistic analyltical brain phantom using different subsampling schemes.
+(2) Examples of in-vivo 7t brain images reconstruction
+
+
+
+![brain phantom - four examples with different subsampling schemes]./images/CORE-PI phantom examples.jpg
+
+
+
+Note - the Realistic Analytical Brain Phantom data was reproduced with
     permission from the authors of this paper:
     Guerquin-Kern, Matthieu, et al. "Realistic analytical phantoms for parallel 
     magnetic resonance imaging." IEEE Transactions on Medical Imaging 31.3
