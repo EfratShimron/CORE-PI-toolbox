@@ -24,7 +24,7 @@ Exmaples include:
 
 
 
-![brain phantom - four examples with different subsampling schemes]./images/CORE-PI phantom examples.jpg
+![brain phantom - four examples with different subsampling schemes] (https://github.com/EfratShimron/CORE-PI-toolbox/blob/master/images/CORE-PI%20phantom%20examples.jpg)
 
 
 
