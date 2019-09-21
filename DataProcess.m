@@ -360,7 +360,7 @@ classdef DataProcess
             HP_Dec_kernel = [zeros(1,D.N_center - LF/2-1) HP_D  zeros(1,D.N_center-LF/2-1)]; % High-Pass Decomposition Filter of length N
             
             % ------ calc approximation coefficients ----
-            disp('CORE-PI - approximation')
+            disp('CORE-PI - Low Pass (approximation) channel')
             D.g = LP_Dec_kernel;
             
             D = CORE(D);
@@ -375,7 +375,7 @@ classdef DataProcess
             
             
             % ------ calc detail coefficients ----
-            disp('CORE-PI - details')
+            disp('CORE-PI - High Pass (details) channel')
             D.g = HP_Dec_kernel;
             
             D = CORE(D);
