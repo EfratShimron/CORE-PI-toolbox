@@ -28,19 +28,19 @@ close all;
 % ====================================================
 %      CHOOSE ONE EXAMPLE FROM THE FOLLOWING LISTS 
 % ====================================================
-% ---- examples with different subsampling schemes, all with R=6  ----
+% ---- examples with different subsampling schemes, all with a reduction factor of R=6  ----
 demo = 'brain_phantom_example';  sampling_scheme='periodic';          wavelet_type = 'db2';
 demo = 'brain_phantom_example';  sampling_scheme='variying-period';   wavelet_type = 'db2';
 %demo = 'brain_phantom_example';  sampling_scheme='variable-density';  wavelet_type = 'db2';
 demo = 'brain_phantom_example';  sampling_scheme='random';            wavelet_type = 'db2';
 
-% --- examples with different wavelet types ---
+% --- examples with different wavelet types (R=6) ---
 % demo = 'brain_phantom_example';  sampling_scheme='periodic';   wavelet_type = 'haar';  %  Try different wavelet types: 'haar' / 'db5' / 'sym4' / 'coif1' (see fig. 5)
 %demo = 'brain_phantom_example';  sampling_scheme='periodic';   wavelet_type = 'coif1';  %  Try different wavelet types: 'haar' / 'db5' / 'sym4' / 'coif1' (see fig. 5)
 %demo = 'brain_phantom_example';  sampling_scheme='periodic';   wavelet_type = 'sym4';  %  Try different wavelet types: 'haar' / 'db5' / 'sym4' / 'coif1' (see fig. 5)
 
-% ---- examples with in-vivo data --------
-% demo = 'In_vivo_example_1';      sampling_scheme='periodic';          wavelet_type = 'db2';
+% ---- examples with in-vivo data, all with R=4 --------
+ demo = 'In_vivo_example_1';      sampling_scheme='periodic';          wavelet_type = 'db2';
 % demo = 'In_vivo_example_2';      sampling_scheme='periodic';          wavelet_type = 'db2';
 
 
@@ -80,12 +80,12 @@ err_mat = abs(abs(D.GoldStandard4display)- abs(D.CORE_PI_Rec4display));
 NRMSE = calc_NRMSE(D.GoldStandard4display,D.CORE_PI_Rec4display);
 
 % ======== display Gold Standard + Rec + Error ======
-MAT = [D.GoldStandard4display   ones(D.N,5) D.CORE_PI_Rec4display ; ones(2,5+2*D.N); ones(D.N,D.N)  ones(D.N,5) err_mat*D.err_mag_factor];
+MAT = [D.GoldStandard4display   ones(D.N,5) D.CORE_PI_Rec4display ; ones(2,5+2*D.N); ones(D.N,D.N)  ones(D.N,5) err_mat*4];
 
 figure; imagesc(abs(MAT)); axis off; axis image; colormap gray; caxis([0 D.cmax]);
 text(10,10,'Gold Standard','Color','w')
 text(10+D.N,10,'CORE-PI','Color','w')
-text(10+D.N,D.N+2+10,['Error magnified x',num2str(D.err_mag_factor)],'Color','w');
+text(10+D.N,D.N+2+10,'Error magnified x4','Color','w');
 text(10+D.N,2*D.N-10,sprintf('NRMSE=%.5f',NRMSE),'Color','w');
 
 
