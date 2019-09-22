@@ -28,10 +28,10 @@ close all;
 % ====================================================
 %      CHOOSE ONE EXAMPLE FROM THE FOLLOWING LISTS 
 % ====================================================
-% ---- examples with different subsampling schemes ----
+% ---- examples with different subsampling schemes, all with R=6  ----
 demo = 'brain_phantom_example';  sampling_scheme='periodic';          wavelet_type = 'db2';
 demo = 'brain_phantom_example';  sampling_scheme='variying-period';   wavelet_type = 'db2';
-demo = 'brain_phantom_example';  sampling_scheme='variable-density';  wavelet_type = 'db2';
+%demo = 'brain_phantom_example';  sampling_scheme='variable-density';  wavelet_type = 'db2';
 demo = 'brain_phantom_example';  sampling_scheme='random';            wavelet_type = 'db2';
 
 % --- examples with different wavelet types ---
@@ -80,12 +80,12 @@ err_mat = abs(abs(D.GoldStandard4display)- abs(D.CORE_PI_Rec4display));
 NRMSE = calc_NRMSE(D.GoldStandard4display,D.CORE_PI_Rec4display);
 
 % ======== display Gold Standard + Rec + Error ======
-MAT = [D.GoldStandard4display   ones(D.N,5) D.CORE_PI_Rec4display ; ones(2,5+2*D.N); ones(D.N,D.N)  ones(D.N,5) err_mat*4];
+MAT = [D.GoldStandard4display   ones(D.N,5) D.CORE_PI_Rec4display ; ones(2,5+2*D.N); ones(D.N,D.N)  ones(D.N,5) err_mat*D.err_mag_factor];
 
 figure; imagesc(abs(MAT)); axis off; axis image; colormap gray; caxis([0 D.cmax]);
 text(10,10,'Gold Standard','Color','w')
 text(10+D.N,10,'CORE-PI','Color','w')
-text(10+D.N,D.N+2+10,'Error magnified x4','Color','w');
+text(10+D.N,D.N+2+10,['Error magnified x',num2str(D.err_mag_factor)],'Color','w');
 text(10+D.N,2*D.N-10,sprintf('NRMSE=%.5f',NRMSE),'Color','w');
 
 

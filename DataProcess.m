@@ -63,8 +63,8 @@ classdef DataProcess
         
         cmin
         cmax
-                
-       
+        err_mag_factor 
+        
     end
     
     % ==================================================== %
@@ -92,7 +92,7 @@ classdef DataProcess
                     D.cmin = 0;     % colormap lower limit (for figures)
                     D.cmax = 0.8;   % colormap upper limit (for figures)
                     D.FileName = 'Analytical_Brain_data_256';
-                     
+                    D.err_mag_factor = 10; %error magnification factor, for final visual display only
                 case {'In_vivo_example_1','In_vivo_example_2'}
                     D.R= 4; % Under-sampling rate
                     D.rotangle = -90; % rotation angle for the final reconstruction
@@ -102,6 +102,7 @@ classdef DataProcess
                     D.extra_fftshift_flag = 1; % an extra fftshift along the 2nd dimension is required for data obtained in the 7T Phillips scanner at Leiden Univeristy
                     D.cmin = 0;      % colormap lower limit (for figures)
                     D.cmax = 0.18;   % colormap upper limit (for figures)
+                    D.err_mag_factor = 4; %error magnification factor, for final visual display only
                     
                     switch demo
                         case 'In_vivo_example_1'
@@ -119,7 +120,7 @@ classdef DataProcess
                 case {'In_vivo_example_1','In_vivo_example_2'}
                 
                 % -------  Load High-Res K-space data -------------
-                load(D.FileName);
+                load(['kspace_data\',D.FileName]);  % load data from the sub-folder named kspace_data
                 
                 % --------- fft-shift the K-space data  --------
                 for n = 1:D.NC  % make kspace uncentered
@@ -132,13 +133,13 @@ classdef DataProcess
                 D = sos_from_kspace(D);
                 
                 % ----- Load sampling mask ---------
-                load('SamplingPattern_240x240_R4');
+                load('sampling/SamplingPattern_240x240_R4');
                 
                 %% =========== Analytic Brain Phantom 256x256 ==============
                 case 'brain_phantom_example'
                 
                 % ------ load data (k-space + sensitivity maps + mask) ---------
-                load(D.FileName);
+                load(['kspace_data\',D.FileName]);
                 D.SenseMaps = SenseMaps;
                 D.mask = mask;
                 D.mask4display = mask; % this is the same as mask because there's no need to rotate or fft-shift the data here
@@ -155,13 +156,13 @@ classdef DataProcess
                 % load sampling pattern
                 switch sampling_scheme
                     case 'periodic'
-                        load('SamplingPattern_256x256_R6_periodic')
+                        load('sampling/SamplingPattern_256x256_R6_periodic')
                     case 'variying-period'
-                        load('SamplingPattern_256x256_R6_var_period')
+                        load('sampling/SamplingPattern_256x256_R6_var_period')
                     case 'variable-density'
-                        load('SamplingPattern_256x256_R6_var_dens')
+                        load('sampling/SamplingPattern_256x256_R6_var_dens')
                     case 'random'
-                        load('SamplingPattern_256x256_R6_random')
+                        load('sampling/SamplingPattern_256x256_R6_random')
                 end
                 
             end % switch demo
