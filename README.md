@@ -39,15 +39,9 @@ Results for examples in group I:
 ## Acknowledgments
 The in-vivo data is courtesy of Prof. Andrew G. Webb from Leiden University Medical Center (LUMC). 
 
-The Realistic Analytical Brain Phantom data is courtesy of the authors of 
+The Realistic Analytical Brain Phantom (resterized) data was utilized here with permission from
+the authors of:
     Guerquin-Kern, Matthieu, et al. "Realistic analytical phantoms for parallel 
     magnetic resonance imaging." IEEE Transactions on Medical Imaging 31.3
     (2011): 626-636.
-The data included here was prepared using that phantom's toolbox, which is available at:
-http://bigwww.epfl.ch/algorithms/mriphantom/
-and was reproduced here with permission from the authors. 
-
-If you use that data in your publications, please cite the brain phantom paper. 
-
-The variable-density sub-sampling schemes were prepared using a function from Michael Lustig's ESPIRIT Matlab toolbox,
-available at: http://people.eecs.berkeley.edu/~mlustig/Software.html
+If you use that data in your publications, please cite this paper. 
