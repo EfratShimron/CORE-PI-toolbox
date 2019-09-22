@@ -24,7 +24,7 @@ Exmaples include:
 
 
 
-![examples with different subsampling schemes](https://github.com/EfratShimron/CORE-PI-toolbox/blob/master/images/phantom_examples.png)
+![examples with different subsampling schemes](https://github.com/EfratShimron/CORE-PI-toolbox/blob/master/README_figures/phantom_examples.png)
 
 
 Note - the Realistic Analytical Brain Phantom data was reproduced with
