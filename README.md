@@ -18,22 +18,38 @@ varying-period / variable-density / random
 ## Getting Started
 Clone or download the CORE-PI code. 
 
-### Prerequisites
-To use the CORE-PI toolbox, you need a liscence for Matlab. The code was tested with Matlab2017R. 
+## Prerequisites
+A liscence for Matlab is required. The code was tested with Matlab2017R. 
 
 ## Running the examples
 Open the "main.m" function in Matlab, choose one example from the list, and run the code.
 
 There are 9 reconstruction examples, divided to 3 groups:
-I. Recosntructions of an analyltical brain phantom using different subsampling schemes - periodic / 
-   varying-period / variable-density / random subsampling - all with a reduction factor of R=6, and 
-   with the default wavelet type 'db2'. 
-II. Reconstructions of the same brain phantom using different wavelet types - haar / coif1 / sym4.
-III. Reconstruction examples with two in-vivo 7t brain scans data, subsampled periodically with R=4. 
+I. **Analyltical brain phantom demos** with **different subsampling schemes**, 
+   all with a reduction factor (sub-sampling rate) of R=6:
+   - Periodic 
+   - Varying-period
+   - Variable-density 
+   - Random subsampling 
+   In all these demos CORE-PI was impelmented with wavelet 'db2'.
+   
+II. **Analyltical brain phantom demos** in which CORE-PI was implemented using **different wavelet types**:
+    - haar 
+    - coif1 
+    - sym4.
+III. **In-vivo 7t brain scans demos** - data was retrospectivly subsampled with R=4 (using periodic subsampling),
+     and CORE-PI was impelmented with wavelet 'db2'.
+
+
+## Analaytical Brain Phantom demos - different subsampling schemes
 
 Results for examples in group I:
 
 ![examples with different subsampling schemes](https://github.com/EfratShimron/CORE-PI-toolbox/blob/master/README_figures/phantom_examples.png)
+
+
+## In-vivo 7T Brain Scans Demos 
+
 
 
 ## Acknowledgments
