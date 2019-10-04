@@ -55,6 +55,9 @@ Results for examples in group 1:
 
 ## In-vivo 7T Brain Scans Demos 
 
+Example from group 3:
+
+![examples with different subsampling schemes](https://github.com/EfratShimron/CORE-PI-toolbox/blob/master/README_figures/CORE-PI_in_vivo_fig.png)
 
 
 ## Acknowledgments
