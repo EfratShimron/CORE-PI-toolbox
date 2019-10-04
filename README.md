@@ -33,10 +33,13 @@ I. **Analyltical brain phantom demos** with **different subsampling schemes**,
    - Random subsampling 
    In all these demos CORE-PI was impelmented with wavelet 'db2'.
    
+
 II. **Analyltical brain phantom demos** in which CORE-PI was implemented using **different wavelet types**:
     - haar 
     - coif1 
     - sym4.
+
+
 III. **In-vivo 7t brain scans demos** - data was retrospectivly subsampled with R=4 (using periodic subsampling),
      and CORE-PI was impelmented with wavelet 'db2'.
 
