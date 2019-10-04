@@ -1,4 +1,4 @@
-# CORE-PI-toolbox   ![alt text]()
+# CORE-PI-toolbox   ![alt text](https://github.com/EfratShimron/CORE-PI-toolbox/blob/master/README_figures/CORE_PI%20logo%20v2.png)
 -----------------------------------------------------------------------------------
 A Matlab package for CORE-PI - a parameter-free parallel MRI reconstruction method
 ----------------------------------------------------------------------------------
