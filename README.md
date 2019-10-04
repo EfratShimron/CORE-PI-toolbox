@@ -18,7 +18,7 @@ varying-period / variable-density / random
 ## Getting Started
 Clone or download the CORE-PI code. 
 
-## Requirements
+## Prerequisites
 A liscence for Matlab is required. The code was tested with Matlab2017R. 
 
 ## Running the examples
