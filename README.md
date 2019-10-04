@@ -2,6 +2,12 @@
 
 <br />
 <br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
 -----------------------------------------------------------------------------------
 A Matlab package for CORE-PI - a parameter-free parallel MRI reconstruction method
@@ -21,13 +27,12 @@ CORE-PI is a **parameter-free method**, so users do not need to calibrate any pa
 CORE-PI is enables flexible 1D undersampling of a 2D Cartesian k-space.
 The toolbox includes demos with various undersampling schemes - periodic, varying-period, variable-density and random schemes.
 
-## Getting Started
-Clone or download the CORE-PI code. 
-
 ## Prerequisites
 A liscence for Matlab is required. The code was tested with Matlab2017R. 
 
-## Running the examples
+## Getting Started
+Clone or download the CORE-PI code.   
+
 Open the "main.m" function in Matlab, choose one example from the list, and run the code.
 
 There are 9 reconstruction examples, divided to 3 groups:
