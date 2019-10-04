@@ -2,7 +2,7 @@
 
 
 <img src="https://github.com/EfratShimron/CORE-PI-toolbox/blob/master/README_figures/CORE_PI%20logo%20v2.png" width=500 align=left>  
-
+<br>
 
 
 -----------------------------------------------------------------------------------
