@@ -6,9 +6,9 @@ A Matlab package for CORE-PI - a parameter-free parallel MRI reconstruction meth
 CORE-PI is a general reconstrution method, suitable for image reconstruction
 from multi-coil (parallel imaging) acquisition of 2D Cartesian k-space
 data. This method was published in:
-     Shimron, Webb, Azhari, "CORE-PI: Non-iterative convolution-based 
+     [Shimron, Webb, Azhari, "CORE-PI: Non-iterative convolution-based 
      reconstruction for parallel MRI in the wavelet domain." 
-     Medical Physics 46.1 (2019):199-214
+     Medical Physics 46.1 (2019):199-214](https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.13260)
 
 CORE-PI is a parameter-free method, so you don't need to calibrate any params
 It also enables flexible 1D undersampling of a 2D Cartesian k-space.
