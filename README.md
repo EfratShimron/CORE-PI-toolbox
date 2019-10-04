@@ -27,7 +27,7 @@ Open the "main.m" function in Matlab, choose one example from the list, and run 
 There are 9 reconstruction examples, divided to 3 groups:
 
 
-1. **Analyltical brain phantom demos** with **different subsampling schemes**, 
+1. **Analyltical brain phantom demos** - reconstructions were performed for **different subsampling schemes**, 
    all with a reduction factor (sub-sampling rate) of R=6:
    - Periodic 
    - Varying-period
