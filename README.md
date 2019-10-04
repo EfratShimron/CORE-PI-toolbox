@@ -10,10 +10,12 @@ data. This method was published in:
      reconstruction for parallel MRI in the wavelet domain." 
      Medical Physics 46.1 (2019):199-214](https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.13260)
 
-CORE-PI is a parameter-free method, so you don't need to calibrate any params
-It also enables flexible 1D undersampling of a 2D Cartesian k-space.
-The toolbox includes demos with various undersampling schemes - periodic / 
-varying-period / variable-density / random 
+
+CORE-PI is a **parameter-free method**, so users do not need to calibrate any params!
+
+
+CORE-PI is enables flexible 1D undersampling of a 2D Cartesian k-space.
+The toolbox includes demos with various undersampling schemes - periodic, varying-period, variable-density and random schemes.
 
 ## Getting Started
 Clone or download the CORE-PI code. 
