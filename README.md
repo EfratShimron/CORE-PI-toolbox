@@ -1,4 +1,4 @@
-# ![alt text](https://github.com/EfratShimron/CORE-PI-toolbox/blob/master/README_figures/CORE_PI%20logo%20v2.png){ width=50% }
+# ![alt text](https://github.com/EfratShimron/CORE-PI-toolbox/blob/master/README_figures/CORE_PI%20logo%20v2.png | width = 30)
 
 
 <img src="https://github.com/EfratShimron/CORE-PI-toolbox/blob/master/README_figures/CORE_PI%20logo%20v2.png" width=200 align=left>
