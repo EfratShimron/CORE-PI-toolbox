@@ -25,7 +25,9 @@ A liscence for Matlab is required. The code was tested with Matlab2017R.
 Open the "main.m" function in Matlab, choose one example from the list, and run the code.
 
 There are 9 reconstruction examples, divided to 3 groups:
-I. **Analyltical brain phantom demos** with **different subsampling schemes**, 
+
+
+1. **Analyltical brain phantom demos** with **different subsampling schemes**, 
    all with a reduction factor (sub-sampling rate) of R=6:
    - Periodic 
    - Varying-period
@@ -34,19 +36,19 @@ I. **Analyltical brain phantom demos** with **different subsampling schemes**,
    In all these demos CORE-PI was impelmented with wavelet 'db2'.
    
 
-II. **Analyltical brain phantom demos** in which CORE-PI was implemented using **different wavelet types**:
+2. **Analyltical brain phantom demos** in which CORE-PI was implemented using **different wavelet types**:
     - haar 
     - coif1 
     - sym4.
 
 
-III. **In-vivo 7t brain scans demos** - data was retrospectivly subsampled with R=4 (using periodic subsampling),
+3. **In-vivo 7t brain scans demos** - data was retrospectivly subsampled with R=4 (using periodic subsampling),
      and CORE-PI was impelmented with wavelet 'db2'.
 
 
 ## Analaytical Brain Phantom demos - different subsampling schemes
 
-Results for examples in group I:
+Results for examples in group 1:
 
 ![examples with different subsampling schemes](https://github.com/EfratShimron/CORE-PI-toolbox/blob/master/README_figures/phantom_examples.png)
 
