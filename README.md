@@ -1,4 +1,4 @@
-# CORE-PI-toolbox
+# CORE-PI-toolbox   ![alt text]()
 -----------------------------------------------------------------------------------
 A Matlab package for CORE-PI - a parameter-free parallel MRI reconstruction method
 ----------------------------------------------------------------------------------
