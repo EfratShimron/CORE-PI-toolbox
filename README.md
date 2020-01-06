@@ -74,7 +74,7 @@ Example from group 3:
 ## Acknowledgments
 The in-vivo data is courtesy of Prof. Andrew G. Webb from Leiden University Medical Center (LUMC). 
 
-The Realistic Analytical Brain Phantom (resterized) data was utilized here with permission from
+The Realistic Analytical Brain Phantom data was utilized here with permission from
 the authors of:
     Guerquin-Kern, Matthieu, et al. "Realistic analytical phantoms for parallel 
     magnetic resonance imaging." IEEE Transactions on Medical Imaging 31.3
