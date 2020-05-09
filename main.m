@@ -1,11 +1,12 @@
 clear all;
 close all;
 
-% This Matlab code includes an implementation of the CORE-PI reconstruction 
+% This Matlab toolbox includes an implementation of the CORE-PI reconstruction 
 % method that was published in:
 %     Shimron, Webb, Azhari, "CORE-PI: Non-iterative convolution-based 
 %     reconstruction for parallel MRI in the wavelet domain." 
 %     Medical Physics 46.1 (2019):199-214
+% When publishing results that are based on this toolbox, please kindly cite this paper.
 
 % CORE-PI is a general reconstrution method, suitable for image reconstruction
 % from multi-coil (parallel imaging) acquisition of 2D Cartesian k-space
@@ -18,10 +19,7 @@ close all;
 %     Guerquin-Kern, Matthieu, et al. "Realistic analytical phantoms for parallel 
 %     magnetic resonance imaging." IEEE Transactions on Medical Imaging 31.3
 %     (2011): 626-636.
-
-% Whenever you present or publish results that are based on this code,
-% please kindly cite the CORE-PI paper (see above).
-% If you use the brain phantom data, please also cite its publication. 
+% If you use the brain phantom data in your code, please cite its publication. 
 
 % (c) E. Shimron, H. Azhari, 2019
 

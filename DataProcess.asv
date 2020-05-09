@@ -1,8 +1,13 @@
 classdef DataProcess 
     % IMPORTANT NOTE: our in-vivo data was obtained using a Philips scanner, in which the 
-    % acquired 2D k-space data produces images that are 1D-fftshifted along one dimension only 
-    % (e.g. two separate halfs of the brain). The "extra_fftshift_flag" in our code compensates for  
-    % this. However, if you work with data of a different scanner/vendor, you may need to perform
+    % acquired 2D k-space data produces that images that are 1D-fftshifted along one dimension only. 
+    % (e.g. two separate halfs of the brain). The "extra_fftshift_flag" in our code is designed specifically to
+    % compensate for this situation.
+    % Therefore, if you perform IFFT2 to fully-sampled data, the image will
+    % need an extra fftshift along one dimension. 
+    % The "extra_fftshift_flag" in our code is designed specifically to
+    % compensate for this situation.
+    % If you work with data of a different scanner/vendor, you may need
     % some extra fftshifts here an there. 
   
     % This toolbox currently supports only periodic sub-sampling for our in-vivo data. 
@@ -18,7 +23,7 @@ classdef DataProcess
         SenseMaps     % sensitivity maps 
         sos % sum of squares of the sensitivity maps
 
-        extra_fftshift_flag  % this flag equals 1 for our in-vivo data, which produces images that inherently require 1D-fftshift. See explanation above
+        extra_fftshift_flag  % this flag equals 1 for our in-vivo data, which produces images that inherently require 1D-fftshifted. See explanation above
         rotangle  % rotation angle, used only for visualization (not during reconstruction) 
         
         R             % Under-sampling Reduction factor 
